@@ -1,5 +1,8 @@
 spring:
+  profiles:
+    active: local
   docker:
     compose:
+      file: docker-compose-local.yaml
       skip:
         in-tests: false
